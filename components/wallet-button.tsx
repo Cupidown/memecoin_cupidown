@@ -65,7 +65,7 @@ export default function WalletButtonPage({ onVisibilityChange, onBurnSuccess }: 
       // Définir le montant à brûler
       // Ici, on brûle 10 000 tokens (en considérant 6 décimales)
       const tokenDecimals = 9;
-      const amountToBurn = 100 * Math.pow(10, tokenDecimals);
+      const amountToBurn = 1000 * Math.pow(10, tokenDecimals);
   
       // Création de l'instruction de burn
       const burnIx = createBurnInstruction(
