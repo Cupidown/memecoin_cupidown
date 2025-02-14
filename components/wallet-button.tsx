@@ -54,7 +54,7 @@ export default function WalletButtonPage({ onVisibilityChange, onBurnSuccess }: 
   
     try {
       // Adresse du mint du token à brûler
-      const tokenMint = new PublicKey("EcnedeREXkTJYGcs3rrJLuCkjgBwoh15KNz82xzrg2Fw");
+      const tokenMint = new PublicKey("6ibNntNu7oysd6PPZ673neX1gCGYm2gsL8TGgKNbES2g");
       
       // Récupère l'Associated Token Account du wallet pour ce token
       const associatedTokenAccount = await getAssociatedTokenAddress(
@@ -64,7 +64,7 @@ export default function WalletButtonPage({ onVisibilityChange, onBurnSuccess }: 
   
       // Définir le montant à brûler
       // Ici, on brûle 10 000 tokens (en considérant 6 décimales)
-      const tokenDecimals = 6;
+      const tokenDecimals = 9;
       const amountToBurn = 100 * Math.pow(10, tokenDecimals);
   
       // Création de l'instruction de burn
